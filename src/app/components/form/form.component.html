@@ -1,0 +1,17 @@
+		<div class="offset-md-3 col-6">
+			<h3>Post the custom game you want to share</h3>
+			<fieldset>	
+				<form action="">
+					<p>Game mode</p>
+					
+					<input type="text" name="game" class="form-control" [(ngModel)]="game"> <br>
+					<p>Type(team/match/event)</p>
+					<input type="text" name="content" class="form-control" [(ngModel)]="content"><br>
+					<p>Start time</p>
+					<input type="text" name="starttime" class="form-control" [(ngModel)]="starttime"><br>
+					<p>Introduction</p>
+					<input type="text" name="intro" class="form-control" [(ngModel)]="intro"><br>
+					<input type="submit" class="btn btn-success" (click) = "getFormData()">
+				</form>
+			</fieldset>	
+		</div>

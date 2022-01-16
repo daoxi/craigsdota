@@ -1,0 +1,84 @@
+<a [routerLink]="['/listings']">Back</a>
+<br />
+<h2 class="page-header">Add Character</h2>
+<form (submit)="onAddSubmit()">
+  <div class="form-group">
+    <label>Profilename</label>
+    <input class="form-control" type="text" [(ngModel)]="profilename" name="profilename" required>
+  </div>
+
+  <div class="form-group">
+    <label>Playerid</label>
+    <input class="form-control" type="text" [(ngModel)]="playerid" name="playerid" required>
+  </div>
+  <div class="form-group">
+    <label>Age</label>
+    <input class="form-control" type="number" min="1" max="110" [(ngModel)]="age" name="age" required>
+  </div>
+  <div class="form-group">
+    <label>Playstyle</label>
+    <select class="form-control" type="text" [(ngModel)]="playstyle" name="playstyle" required>
+      <option value="Casual">Casual</option>
+      <option value="Average">Average</option>
+      <option value="Hardcore">Hardcore</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <input id="image" name="image" [(ngModel)]="image" type="file" >
+  </div>
+  
+  <div class="form-group">
+    <label>Character</label>
+    <input class="form-control" type="text" [(ngModel)]="character" name="character" required>
+  </div>
+  
+  <div class="form-group">
+    <label>Game Mode</label>
+    <select class="form-control" type="text" [(ngModel)]="game" name="game" required>
+      <option value="All Pick">All Pick</option>
+      <option value="Turbo Mode">Turbo Mode</option>
+      <option value="Captain Draft">Captain Draft</option>
+    </select>
+  </div>
+  
+  <div class="form-group">
+    <label>Voice</label>
+    <select class="form-control" type="text" [(ngModel)]="voice" name="voice" required>
+      <option value="Skype">Skype</option>
+      <option value="Other">Other</option>
+      <option value="None">None</option>
+    </select>
+  </div>
+  
+  <div class="form-group">
+    <label>Playtime</label>
+    <select class="form-control" type="text" [(ngModel)]="playtime" name="playtime" required>
+      <option value="AM1EDT">AM1EDT</option>
+      <option value="AM2EDT">AM2EDT</option>
+      <option value="AM3EDT">AM3EDT</option>
+      <option value="AM4EDT">AM4EDT</option>
+      <option value="AM5EDT">AM5EDT</option>
+      <option value="AM6EDT">AM6EDT</option>
+      <option value="AM7EDT">AM7EDT</option>
+      <option value="AM8EDT">AM8EDT</option>
+      <option value="AM9EDT">AM9EDT</option>
+      <option value="AM10EDT">AM10EDT</option>
+      <option value="AM11EDT">AM11EDT</option>
+      <option value="AM12EDT">AM12EDT</option>
+      <option value="PM1EDT">PM1EDT</option>
+      <option value="PM2EDT">PM2EDT</option>
+      <option value="PM3EDT">PM3EDT</option>
+      <option value="PM4EDT">PM4EDT</option>
+      <option value="PM5EDT">PM5EDT</option>
+      <option value="PM6EDT">PM6EDT</option>
+      <option value="PM7EDT">PM7EDT</option>
+      <option value="PM8EDT">PM8EDT</option>
+      <option value="PM9EDT">PM9EDT</option>
+      <option value="PM10EDT">PM10EDT</option>
+      <option value="PM11EDT">PM11EDT</option>
+      <option value="PM12EDT">PM12EDT</option>
+    </select>
+  </div>
+
+  <input type="submit" value="submit" class="btn btn-success">
+</form>

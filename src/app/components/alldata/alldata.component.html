@@ -1,0 +1,23 @@
+<div class="list-group">
+ <h3 class="text-center">Here is the list of custom game lobbies</h3>
+ <a *ngFor="let item of items" class="list-group-item list-group-item-action flex-column align-items-start">
+ <div class="d-flex w-100 justify-content-between">
+  <p>Gamemode:</p>
+ <h5 class="mb-1">{{item.game}}</h5>
+ 
+<br><br/>
+ </div>
+ <p> </p>
+   <p>Type:</p>
+ 
+ <p class="mb-1">{{item.content}}</p>
+ <br><br/>
+   <p>Star Time:</p>
+  <p class="mb-1">{{item.starttime}}</p>
+  <br><br/>
+  <p>Intro:</p>
+   <p class="mb-1">{{item.intro}}</p>
+   
+ </a>
+</div>
+

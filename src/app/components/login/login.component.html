@@ -1,0 +1,20 @@
+<div class="form-container">
+  <p>Login With Your Accounts</p>
+    <span class="error" *ngIf="error">{{ error }}</span>
+  
+  <a (click)="loginGoogle()" id="google"><img src="assets/img/googlelogin.PNG"></a>
+  <a (click)="loginFb()" id="fb"><img src="assets/img/fblogin.PNG"></a>
+  
+  <p>Or if you have an account:</p>
+  
+  <a routerLink="/login-email" id="email"><img src="http://area50wny.org/wp-content/uploads/2016/01/EmailLoginButton.png"></a>
+ 
+  <p>Don't have one?</p>
+  
+  <a routerLink="/signup" id="signup"><img src="http://funfitfight.com/wp-content/uploads/2014/11/orange_signupnow.png"></a>
+  
+  <p>Forgot your password?</p>
+    
+    <a routerLink="/reset-pw"><img src="http://www.clker.com/cliparts/B/0/5/6/X/q/red-rectangle-reset-password-button-md.png"></a>
+  
+</div>

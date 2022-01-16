@@ -1,0 +1,22 @@
+<div *ngIf="listing">
+  <br>
+  <h2 class="page-header">{{listing.profilename}}</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <img style="width:100%" class="thumbnail" src="{{imageUrl}}">
+    </div>
+    <div class="col-md-8">
+      <ul class="list-group">
+        <li class="list-group-item">Playerid: {{listing.playerid}}</li>
+        <li class="list-group-item">Age: {{listing.age}}</li>
+        <li class="list-group-item">Playstyle: {{listing.playstyle}}</li>
+        <li class="list-group-item">Character: {{listing.character}}</li>
+        <li class="list-group-item">Game Mode: {{listing.game}}</li>
+        <li class="list-group-item">Voice: {{listing.voice}}</li>
+        <li class="list-group-item">Playtime: {{listing.playtime}}</li>
+      </ul>
+    </div>
+    <a class="btn btn-default" [routerLink]="['/edit-listing/'+listing.$key]">Edit</a>
+    <a (click)="onDeleteClick()" class="btn btn-danger">Delete</a>
+  </div>
+</div>
